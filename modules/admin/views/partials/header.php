@@ -23,7 +23,7 @@ use yii\widgets\Breadcrumbs;
 			<div class="container-fluid navbar-inner">
 				<a href="../dashboard/index.html" class="navbar-brand">
 					<!--Logo start-->
-				
+
 				</a>
 				<div class="sidebar-toggle" data-toggle="sidebar" data-active="true">
 					<i class="icon">
@@ -190,18 +190,18 @@ use yii\widgets\Breadcrumbs;
 								]) ?>
 							</nav>
 							</div>
-							
+
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="iq-header-img">
-				<img src="https://ik.imagekit.io/tcz2d20pj/top-header3.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673011321072" alt="header" class="theme-color-default-img img-fluid w-100 h-100 animated-scaleX">
-				<img src="https://ik.imagekit.io/tcz2d20pj/top-header3.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673011321072" alt="header" class="theme-color-purple-img img-fluid w-100 h-100 animated-scaleX">
-				<img src="https://ik.imagekit.io/tcz2d20pj/top-header3.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673011321072" alt="header" class="theme-color-blue-img img-fluid w-100 h-100 animated-scaleX">
-				<img src="https://ik.imagekit.io/tcz2d20pj/top-header3.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673011321072" alt="header" class="theme-color-green-img img-fluid w-100 h-100 animated-scaleX">
-				<img src="https://ik.imagekit.io/tcz2d20pj/top-header3.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673011321072" alt="header" class="theme-color-yellow-img img-fluid w-100 h-100 animated-scaleX">
-				<img src="https://ik.imagekit.io/tcz2d20pj/top-header3.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673011321072" alt="header" class="theme-color-pink-img img-fluid w-100 h-100 animated-scaleX">
+				<img src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/dashboard/top-header.png" alt="header" class="theme-color-default-img img-fluid w-100 h-100 animated-scaleX">
+				<img src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/dashboard/top-header.png" alt="header" class="theme-color-purple-img img-fluid w-100 h-100 animated-scaleX">
+				<img src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/dashboard/top-header.png" alt="header" class="theme-color-blue-img img-fluid w-100 h-100 animated-scaleX">
+				<img src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/dashboard/top-header.png" alt="header" class="theme-color-green-img img-fluid w-100 h-100 animated-scaleX">
+				<img src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/dashboard/top-header.png" alt="header" class="theme-color-yellow-img img-fluid w-100 h-100 animated-scaleX">
+				<img src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/dashboard/top-header.png" alt="header" class="theme-color-pink-img img-fluid w-100 h-100 animated-scaleX">
 			</div>
 		</div> <!-- Nav Header Component End -->
 		<!--Nav End-->

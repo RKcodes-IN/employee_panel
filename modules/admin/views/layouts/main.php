@@ -82,7 +82,7 @@ a{
 	}
 </style>
 
-<body class="theme-color-red">
+<body class="theme-color-bule">
 	<div id="loading">
 		<div class="loader simple-loader animate__animated animate__fadeOut d-none">
 			<div class="loader-body"></div>

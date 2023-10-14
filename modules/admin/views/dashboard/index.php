@@ -1,6 +1,6 @@
 <style>
    td {
-   white-space: pre-wrap !important;
+      white-space: pre-wrap !important;
    }
 </style>
 <div class="col-md-12 col-lg-12">
@@ -17,7 +17,7 @@
                      </div>
                      <div class="progress-detail">
                         <p class="mb-2">Total Users</p>
-                        <h4 class="counter"></h4>
+                        <h4 class="counter">0</h4>
                      </div>
                   </div>
                </div>
@@ -31,8 +31,8 @@
                         </svg>
                      </div>
                      <div class="progress-detail">
-                        <p class="mb-2">Total Skippers</p>
-                        <h4 class="counter"></h4>
+                        <p class="mb-2">Total Resumes</p>
+                        <h4 class="counter">0</h4>
                      </div>
                   </div>
                </div>
@@ -46,8 +46,8 @@
                         </svg>
                      </div>
                      <div class="progress-detail">
-                        <p class="mb-2">Total Request</p>
-                        <h4 class="counter"></h4>
+                        <p class="mb-2">Total Submitted Resumes</p>
+                        <h4 class="counter">0</h4>
                      </div>
                   </div>
                </div>
@@ -61,8 +61,8 @@
                         </svg>
                      </div>
                      <div class="progress-detail">
-                        <p class="mb-2">New Requests</p>
-                        <h4 class="counter"></h4>
+                        <p class="mb-2">Total Users</p>
+                        <h4 class="counter">0</h4>
                      </div>
                   </div>
                </div>
