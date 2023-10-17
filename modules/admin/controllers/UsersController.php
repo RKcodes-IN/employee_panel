@@ -79,7 +79,7 @@ class UsersController extends Controller
 	 * @return mixed
 	 */
 
-	 public function actionSkipperAmount()
+	public function actionSkipperAmount()
 	{
 		$searchModel = new UserSearch();
 		$dataProvider = $searchModel->search(Yii::$app->request->queryParams, User::ROLE_SKIPPER);
@@ -161,7 +161,7 @@ class UsersController extends Controller
 		}
 		if ($model->load(Yii::$app->request->post())) {
 			if ($model->save()) {
-				return $this->redirect(['view', 'id' => $model->id]);
+				return $this->redirect(['login']);
 				//return $this->redirect(['update', 'id' => $model->id]);
 			} else {
 				print_r($model->getErrors());
@@ -317,10 +317,9 @@ class UsersController extends Controller
 		return $data;
 	}
 
-	public function actionLiveTracking() {
-	
-		return $this->render ('live_track');	
+	public function actionLiveTracking()
+	{
+
+		return $this->render('live_track');
 	}
-
-
 }
