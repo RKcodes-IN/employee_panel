@@ -224,7 +224,7 @@ class SiteController extends Controller
 			//if($user_verification['status'] == User::STATUS_ACTIVE){
 			if ($model->login()) {
 
-				if (\Yii::$app->user->identity->user_role == User::ROLE_ADMIN) {
+				if (\Yii::$app->user->identity->user_role == User::ROLE_ADMIN || \Yii::$app->user->identity->user_role == User::ROLE_USER) {
 					return $this->redirect(['/admin/dashboard']);
 				}
 				//var_dump($model); exit;
@@ -252,16 +252,19 @@ class SiteController extends Controller
 			\Yii::$app->end();
 		}
 		if ($model->load(Yii::$app->request->post())) {
+			$model->username = $model['email'];
+			$model->user_role = User::ROLE_USER;
+			// var_dump($model['email']);exit;
 			if ($model->save()) {
-				return $this->redirect(['view', 'id' => $model->id]);
+				return $this->redirect(['login']);
 				//return $this->redirect(['update', 'id' => $model->id]);
 			} else {
 				print_r($model->getErrors());
 				exit;
 			}
+		} else {
+			return $this->render('register', ['model' => $model]);
 		}
-
-		return $this->render('register',['model'=>$model]);
 	}
 
 

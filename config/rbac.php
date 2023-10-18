@@ -1,4 +1,5 @@
 <?php
+
 /**
  * this file is merged together with main "app-web" config
  */
@@ -17,7 +18,7 @@ return [
 				'allow'   => false,
 				'controllers' => ['admin/*'],
 				'matchCallback' => function ($rule, $action) {
-					$access = User::isAdmin();
+					$access = User::isAdmin() || User::isUser();
 					return !$access;
 				},
 				'denyCallback' => function ($null, $action) {
@@ -25,7 +26,7 @@ return [
 					throw new NotFoundHttpException('Page not found.');
 				}
 			],
-			
+
 			// this one is required to make all other site works.
 			[
 				'allow' => true,
@@ -42,5 +43,5 @@ return [
 	// 	],
 	// ],
 
-	
+
 ];

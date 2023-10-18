@@ -12,12 +12,13 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="submitted-resume-create">
     <div class="card">
-       <div class="card-body">
-    <!-- <h1><?= Html::encode($this->title) ?></h1> -->
+        <div class="card-body">
+            <!-- <h1><?= Html::encode($this->title) ?></h1> -->
 
-    <?= $this->render('_form', [
-        'model' => $model,
-    ]) ?>
-    </div>
+            <?= $this->render('_form', [
+                'model' => $model,
+                'resumes' => $resumes,
+            ]) ?>
+        </div>
     </div>
 </div>

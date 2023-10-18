@@ -100,13 +100,13 @@ class User extends ActiveRecord implements IdentityInterface
 				],*/
 			//[['user_role'], 'safe'],
 			//[[ 'username','password','passwordRepeat'], 'required'],
-			[['username'], 'required'],
+			// [['username'], 'required'],
 
-			[['username'], 'unique'],
+			[['email'], 'unique'],
 			['email', 'email'],
 			[['email'], 'unique'],
 			[['contact_no', 'device_type'], 'integer'],
-			[['referal_id', 'referal_code', 'noline_status', 'signup_type', 'city_id', 'verify_status'], 'safe'],
+			[['referal_id', 'referal_code', 'noline_status', 'signup_type', 'city_id', 'verify_status', 'username'], 'safe'],
 			/*[
                 [
                     'email',
@@ -589,6 +589,8 @@ class User extends ActiveRecord implements IdentityInterface
 		}
 		return \Yii::$app->user->identity->user_role == self::ROLE_ADMIN;
 	}
+
+
 
 
 	public static function isPriest()

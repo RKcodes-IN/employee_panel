@@ -31,7 +31,7 @@ class ResumesController extends Controller
                         'allow' => true,
                         'actions' => ['index', 'view', 'create', 'update', 'delete', 'update-status'],
                         'matchCallback' => function () {
-                            return User::isAdmin() || User::isSubAdmin();
+                            return User::isAdmin() || User::isUser();
                         }
                        
                     ],
@@ -57,7 +57,7 @@ class ResumesController extends Controller
     public function actionIndex()
     {
         $searchModel = new ResumesSearch();
-        if(\Yii::$app->user->identity->user_role==User::ROLE_ADMIN || \Yii::$app->user->identity->user_role==User::ROLE_SUBADMIN){
+        if(\Yii::$app->user->identity->user_role==User::ROLE_ADMIN || \Yii::$app->user->identity->user_role==User::ROLE_USER){
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
         } else if(\Yii::$app->user->identity->user_role==User::ROLE_MANAGER){
             $dataProvider = $searchModel->managersearch(Yii::$app->request->queryParams);

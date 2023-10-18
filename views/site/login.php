@@ -7,7 +7,7 @@
 
 use yii\bootstrap4\ActiveForm;
 use yii\helpers\Html;
-
+use yii\helpers\Url;
 
 ?>
 
@@ -57,7 +57,7 @@ use yii\helpers\Html;
 								</div>
 							</div>
 							<?php ActiveForm::end(); ?>
-							<a href="">Do not have a account? Requster Here!!</a>
+							<a href="<?= Url::toRoute('site/register') ?>">Do not have a account? Requster Here!!</a>
 
 
 

@@ -8,7 +8,7 @@ use yii\helpers\Html;
 
 <style>
     .card {
-        border: none !important;
+        padding: 50px;
     }
 
     .row {
@@ -41,18 +41,18 @@ use yii\helpers\Html;
                         <div class="row">
 
 
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <div class="form-group">
                                     <?= $form->field($model, 'first_name')->textInput(['maxlength' => true,]) ?>
                                 </div>
-                                <?= $form->field($model, 'username', ['enableAjaxValidation' => true]); ?>
+                                <?= $form->field($model, 'last_name')->textInput(['maxlength' => true]) ?>
+                                <?= $form->field($model, 'email', ['enableAjaxValidation' => true])->textInput(['maxlength' => true]) ?>
+
                                 <?= $form->field($model, 'password')->passwordInput() ?>
 
                             </div>
 
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                <?= $form->field($model, 'last_name')->textInput(['maxlength' => true]) ?>
-                                <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <?= $form->field($model, 'passwordRepeat')->passwordInput() ?>
 
                             </div>
